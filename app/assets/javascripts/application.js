@@ -10,6 +10,13 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+// Vendor Files
 //= require jquery
+//= require hamlcoffee
 //= require angular
 //= require angular-resource
+//
+// Photogur Application
+//= require app/initialize
+//= require_tree ../templates
+//= require_tree ./app/controllers

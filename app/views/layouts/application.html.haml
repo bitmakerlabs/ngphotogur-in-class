@@ -1,9 +1,10 @@
 !!!
-%html{:"ng-app" => true}
+%html{:"ng-app" => "photogur"}
   %head
     %title NgPhotogur
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    = yield
+    / Like yield in rails. Tells Angular to render the template here
+    %div{:"ng-view" => ""}
