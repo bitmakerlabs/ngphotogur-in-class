@@ -21,10 +21,9 @@
     
 )
 
-
-# @photogur.run(['$window', '$templateCache', ($window, $templateCache) ->
-#   # Load the hamlc templates into the angular template cache when angular starts up.
-#   # This means angular doesn't need to download each template from the server 
-#   # when a page is requested.
-#   $templateCache.put(name, templateFunction) for name, templateFunction of $window.JST
-# ])
+@photogur.run(['$window', '$templateCache', ($window, $templateCache) ->
+  # Load the hamlc templates into the angular template cache when angular starts up.
+  # This means angular doesn't need to download each template from the server 
+  # when a page is requested.
+  $templateCache.put(name, templateFunction) for name, templateFunction of $window.JST
+])
