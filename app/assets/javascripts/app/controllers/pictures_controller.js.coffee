@@ -18,6 +18,8 @@
     (data) ->
       alert("Could not retrieve Picture data.")
   )
+  # Assign the Picture resource to a variable so we can 
+  # interact with the api from the Browser Console
   window.Picture = Picture
 
 )
