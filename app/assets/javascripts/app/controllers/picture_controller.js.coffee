@@ -6,4 +6,8 @@
         # There was an error
         $scope.errorMessage = "Could not retrieve the picture."
     )
+
+    $scope.updatePicture = ->
+        console.log "Updating the picture"
+        Picture.foo($scope.picture)
 )

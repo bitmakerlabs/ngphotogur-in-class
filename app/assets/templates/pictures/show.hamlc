@@ -2,4 +2,5 @@
     {{errorMessage}}
 
 %h1 {{picture.title}}
+by {{picture.artist}}
 %img{:"ng-src" => "{{picture.url}}"}
