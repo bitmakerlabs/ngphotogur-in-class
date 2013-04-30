@@ -1,8 +1,9 @@
-@photogur.controller("PictureController", ($scope) ->
+@photogur.controller("PictureController", ($scope, $routeParams, Picture) ->
 
-    $scope.picture = {
-      title : "The old church on the coast of White sea",
-      artist: "Sergey Ershov",
-      url   : "http://monicao.s3.amazonaws.com/bitmaker/house.jpg"
-    }
+    # Picture.get({id: 100})
+    # $scope.picture = Picture.get({id: $routeParams.id})
+    $scope.picture = Picture.get($routeParams, $.noop, (data) ->
+        # There was an error
+        $scope.errorMessage = "Could not retrieve the picture."
+    )
 )

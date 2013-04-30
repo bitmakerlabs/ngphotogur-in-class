@@ -3,5 +3,5 @@
 
 %div.picture{:"ng-repeat" => "image in pictures"}
     %h2 {{image.title}}
-    %a{:href => "/pictures/99"}
+    %a{:href => "/pictures/{{image.id}}"}
         %img{:"ng-src" => "{{image.url}}"}
