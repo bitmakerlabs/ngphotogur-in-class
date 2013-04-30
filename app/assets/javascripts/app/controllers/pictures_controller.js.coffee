@@ -11,6 +11,6 @@
   # $scope.isHomer = ->
   #   return $scope.name.toLowerCase() == 'homer'
 
-  $scope.pictures = Picture
+  $scope.pictures = Picture.query()
 
 )

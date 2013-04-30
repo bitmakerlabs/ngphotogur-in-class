@@ -1,4 +1,4 @@
-@photogur = angular.module('photogur', [])
+@photogur = angular.module('photogur', ['ngResource'])
 
 @photogur.config(($routeProvider, $locationProvider) ->
     # Enable HTML5 history support. For browsers that support HTML5 history this means
