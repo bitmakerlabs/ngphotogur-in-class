@@ -11,6 +11,13 @@
   # $scope.isHomer = ->
   #   return $scope.name.toLowerCase() == 'homer'
 
-  $scope.pictures = Picture.query()
+  $scope.pictures = Picture.query(
+    (data) ->
+      console.log("Success!!")
+    ,
+    (data) ->
+      alert("Could not retrieve Picture data.")
+  )
+  window.Picture = Picture
 
 )
